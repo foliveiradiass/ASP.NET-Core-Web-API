@@ -4,7 +4,7 @@ Passos para instalação:
 
 2 - Instalar o MySql
 
-3 - Configurar a conexão com o banco de dados, StudentRegistration/StudentRegistration/appsettings.json
+3 - Configurar a conexão com o banco de dados, StudentRegistration\StudentRegistration\appsettings.json
 
 4 - Abrir o prompt de comando e executar os seguintes comandos:
   D:\Projetos\StudentRegistration\StudentRegistration> dotnet build
