@@ -6,7 +6,8 @@ Passos para instalação:
 
 3 - Configurar a conexão com o banco de dados, StudentRegistration\StudentRegistration\appsettings.json
 
-4 - Abrir o prompt de comando e executar os seguintes comandos:
+4 - Abrir o prompt de comando e executar os seguintes comandos: \n
+
   D:\Projetos\StudentRegistration\StudentRegistration> dotnet build
   
   Obs: este comando cria o banco de dados com base no Migrations
