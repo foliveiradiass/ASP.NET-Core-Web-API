@@ -10,10 +10,10 @@ Passos para instalação:
   D:\Projetos\StudentRegistration\StudentRegistration> dotnet build
   
   Obs: este comando cria o banco de dados com base no Migrations
-  D:\Projetos\StudentRegistration\StudentRegistration> dotnet ef database update
+  D:\StudentRegistration\StudentRegistration> dotnet ef database update
   
   Obs: inicia a Web API
-  D:\Projetos\StudentRegistration\StudentRegistration> dotnet run
+  D:\StudentRegistration\StudentRegistration> dotnet run
   
 Obs: dentro do projeto existe um arquivo para fazer testes com a importação, nome do arquivo "Students.json"  
 5 - Abrir projeto "Site" e executar o arquivo "index.html"
