@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Escola Municipal Modelo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/vue.js"></script>
+  <script src="scripts/axios.min.js"></script>
+  <script src="scripts/moment.js"></script>
+</head>
+
+<body>
+
+  <div class="container mt-3" id="app">
+    <h2>{{title}}</h2>
+    <br>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#importacao">Importação</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#visualizacao" v-on:click="getStudent()">Visualização</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">        
+      <div id="importacao" class="container tab-pane active">
+        <br>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <input class="form-control-file" type="file" id="file" ref="file" v-on:change="handleFileUpload()">
+          </div>
+        </div>
+        <br>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="button" class="btn btn-dark" v-on:click="submitFile()">Importar</button>
+          </div>
+        </div>
+      </div>
+      <div id="visualizacao" class="container tab-pane fade">
+        <br>
+        <div class="container">
+          <table class="table table-hover table-sm"  v-bind="students">
+            <thead class="thead-dark">
+              <tr>
+                <th>CPF</th>
+                <th>Nome</th>
+                <th>Data de Nascimento</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="student in students" v-bind:id="student.id" v-on:click="selectStudent($event)">
+                <td>{{student.cpf}}</td>
+                <td>{{student.name}}</td>
+                <td>{{formatDate(student.birthDate)}}</td>
+                <td><button class="btn btn-secondary btn-sm" v-on:click="removeStudent(student.id, student.name)">Remover</button>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script type="text/javascript" src="scripts/index.js"></script>
+</html>
