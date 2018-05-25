@@ -1,90 +1,37 @@
-<<<<<<< HEAD
 [
 	{
     	"cpf": "525.113.630-70",
     	"name": "Enrico Anthony Vicente Barros",
-    	"birthDate": "1982-09-29T00:00:00",
-    	"dateRegister": "2018-05-18T00:00:00"
+    	"birthDate": "1982-09-29T00:00:00"
 	},
 	{
     	"cpf": "868.562.350-20",
     	"name": "Mariah Márcia Mariana",
-    	"birthDate": "1996-12-02T00:00:00",
-    	"dateRegister": "2018-05-18T00:00:00"
+    	"birthDate": "1996-12-02T00:00:00"
 	},
 	{
     	"cpf": "430.511.682-03",
     	"name": "Paulo Victor da Paz",
-    	"birthDate": "1986-10-02T00:00:00",
-    	"dateRegister": "2018-05-18T00:00:00"
+    	"birthDate": "1985-10-02T00:00:00"
 	},
 	{
     	"cpf": "380.979.790-12",
     	"name": "Caio Nelson Moraes",
-    	"birthDate": "1990-01-19T00:00:00",
-    	"dateRegister": "2018-05-18T00:00:00"
+    	"birthDate": "1990-01-19T00:00:00"
 	},
 	{
     	"cpf": "105.117.178-49",
     	"name": "Lucas Elias Costa",
-    	"birthDate": "1983-01-25T00:00:00",
-    	"dateRegister": "2018-05-18T00:00:00"
+    	"birthDate": "1983-01-25T00:00:00"
 	},
 	{
     	"cpf": "398.556.472-89",
     	"name": "Calebe Pedro Carvalho",
-    	"birthDate": "2000-01-05T00:00:00",
-    	"dateRegister": "2018-05-18T00:00:00"
+    	"birthDate": "2000-01-05T00:00:00"
 	},
 	{
     	"cpf": "114.078.592-34",
     	"name": "Matheus João Pietro Nogueira",
-    	"birthDate": "2010-12-15T00:00:00",
-    	"dateRegister": "2018-05-18T00:00:00"
+    	"birthDate": "2010-12-15T00:00:00"
 	}
-=======
-[
-	{
-    	"cpf": "525.113.630-70",
-    	"name": "Enrico Anthony Vicente Barros",
-    	"birthDate": "1982-09-29T00:00:00",
-    	"dateRegister": "2018-05-18T00:00:00"
-	},
-	{
-    	"cpf": "868.562.350-20",
-    	"name": "Mariah Márcia Mariana",
-    	"birthDate": "1996-12-02T00:00:00",
-    	"dateRegister": "2018-05-18T00:00:00"
-	},
-	{
-    	"cpf": "430.511.682-03",
-    	"name": "Paulo Victor da Paz",
-    	"birthDate": "1986-10-02T00:00:00",
-    	"dateRegister": "2018-05-18T00:00:00"
-	},
-	{
-    	"cpf": "380.979.790-12",
-    	"name": "Caio Nelson Moraes",
-    	"birthDate": "1990-01-19T00:00:00",
-    	"dateRegister": "2018-05-18T00:00:00"
-	},
-	{
-    	"cpf": "105.117.178-49",
-    	"name": "Lucas Elias Costa",
-    	"birthDate": "1983-01-25T00:00:00",
-    	"dateRegister": "2018-05-18T00:00:00"
-	},
-	{
-    	"cpf": "398.556.472-89",
-    	"name": "Calebe Pedro Carvalho",
-    	"birthDate": "2000-01-05T00:00:00",
-    	"dateRegister": "2018-05-18T00:00:00"
-	},
-	{
-    	"cpf": "114.078.592-34",
-    	"name": "Matheus João Pietro Nogueira",
-    	"birthDate": "2010-12-15T00:00:00",
-    	"dateRegister": "2018-05-18T00:00:00"
-	}
->>>>>>> dea5bdd00953c512ff018776ff3fdfe9327044ac
 ]

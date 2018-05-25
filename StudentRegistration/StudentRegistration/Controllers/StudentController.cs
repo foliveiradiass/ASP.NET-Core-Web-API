@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -107,6 +108,8 @@ namespace StudentRegistration.Controllers
         {
             try
             {
+                DateTime currentDateTime = DateTime.Now;
+                List<Student> listStudent = null;
 
                 var filePath = Path.GetTempFileName();
 
@@ -118,8 +121,28 @@ namespace StudentRegistration.Controllers
                     }
                 }
 
-                List<Student> listStudent = HelpLibrary.DeserializeJson(System.IO.File.ReadAllText(filePath));
-                DateTime currentDateTime = DateTime.Now;
+                List<Student> myTest = new List<Student>();
+                myTest.Add(new Student
+                {
+                    Name = "aaaa",
+                    BirthDate = DateTime.Now,
+                    Cpf = "11111"
+                });
+                myTest.Add(new Student
+                {
+                    Name = "aaaa",
+                    BirthDate = DateTime.Now,
+                    Cpf = "11111"
+                });
+
+                //HelpLibrary.SerializeObject<List<Student>>(myTest);
+
+                string fileInfoExtension = new FileInfo(file.FileName).Extension.ToUpper();
+
+                if (fileInfoExtension == ".JSON")
+                    listStudent = HelpLibrary.DeserializeFromJson<List<Student>>(System.IO.File.ReadAllText(filePath));
+                else if (fileInfoExtension == ".XML")
+                    listStudent = HelpLibrary.DeserializeFromXml<List<Student>>(System.IO.File.ReadAllText(filePath));
 
                 listStudent.ForEach(p =>
                 {
@@ -134,7 +157,10 @@ namespace StudentRegistration.Controllers
                         _context.Update(student);
                     }
                     else
+                    {
+                        p.DateRegister = currentDateTime;
                         _context.Add(p);
+                    }
                 });
 
                 //Save changes

@@ -8,4 +8,3 @@ D:\Projetos\StudentRegistration\StudentRegistration\obj\Debug\netcoreapp2.0\Stud
 D:\Projetos\StudentRegistration\StudentRegistration\bin\Debug\netcoreapp2.0\StudentRegistration.pdb
 D:\Projetos\StudentRegistration\StudentRegistration\obj\Debug\netcoreapp2.0\StudentRegistration.dll
 D:\Projetos\StudentRegistration\StudentRegistration\obj\Debug\netcoreapp2.0\StudentRegistration.pdb
-D:\Projetos\StudentRegistration\StudentRegistration\obj\Debug\netcoreapp2.0\StudentRegistration.csprojResolveAssemblyReference.cache

@@ -4,8 +4,8 @@ const v = new Vue({
         title: 'Importação dos Dados de Aluno',
         loading: false,
         students: [],
-        getStudentEndPoint: 'http://localhost:62898/api/student',
-        importFileEndPoint: 'http://localhost:62898/api/student/import'
+        getStudentEndPoint: 'http://localhost:62897/api/student',
+        importFileEndPoint: 'http://localhost:62897/api/student/import'
     },
     created() {
         this.getStudent();
